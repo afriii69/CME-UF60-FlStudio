@@ -63,7 +63,6 @@ powershell -command "Expand-Archive -Path %TEMP%\CME_UF60.zip -DestinationPath %
 if not exist "%DEST%" mkdir "%DEST%"
 copy /Y "%TEMP%\CME_UF60_extract\CME-UF60-FlStudio-main\*.py" "%DEST%\"
 echo Done! Open FL Studio and check MIDI settings.
-timeout /t 2
 ```
 
 > **Note:** Make sure each `.py` file has its `# name=` header on the first line. This is what FL Studio uses to identify the device.
